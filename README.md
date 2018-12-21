@@ -1,4 +1,4 @@
-# ndc07's dotfiles
+# My dotfiles
 
 📝 dotfiles for Elementary OS
 
@@ -8,7 +8,7 @@
 
 Clone this project:
 ```
-git clone https://github.com/ndc07/dotfiles.git
+git clone https://github.com/jade28/dotfiles.git
 ```
 
 cd `dotfiles`:
