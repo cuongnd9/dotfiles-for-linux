@@ -23,10 +23,6 @@ Run `install.sh` file:
 
 Enjoy 😘
 
-## Author
-
-[ndc07](https://github.com/ndc07) 💎
-
 ## License
 
-[MIT](https://github.com/ndc07/dotfiles/blob/master/LICENSE)
+MIT ©️ [jade28](https://github.com/jade28)💎
