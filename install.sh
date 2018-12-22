@@ -90,11 +90,9 @@ function config_dotfiles {
 
 function install_applications {
 
-    # Install Node.js 10
-    wget -qO- https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    # Install Node.js v10.x
+    sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
-
-    sudo apt-get install -y build-essential
 
     # Install snap
     sudo apt update
