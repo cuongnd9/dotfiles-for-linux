@@ -1,5 +1,4 @@
 #!/bin/bash
-##################INSTALL FOR ELEMENTARY OS##################
 
 # Initialize
 function initialize {
@@ -18,17 +17,10 @@ function install_theme {
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:philip.scott/elementary-tweaks
     sudo apt-get update
-    sudo apt-get install elementary-tweaks
-    
-    # Install Hack Regular Nerd Font
-    sudo cp ./fonts/Hack\ Regular\ Nerd\ Font\ Complete.ttf ~/.local/share/fonts
-    
+    sudo apt-get install elementary-tweaks    
 
     # Install dconf-tools
     sudo apt-get install dconf-tools
-
-    # Set Monospace font
-    gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Nerd Font 10'
     
     # Color Scheme for Pantheon terminal
     gsettings set io.elementary.terminal.settings palette '#4d4d4d:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#bbbbbb:#555555:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#ffffff'
@@ -68,9 +60,16 @@ function install_zsh {
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
     
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
+    # Install Fonts Powerline
+    sudo apt-get install fonts-powerline
+
+    # Set Monospace font
+    org.gnome.desktop.interface monospace-font-name 'Hack 10'
     
-    # Install PowerLevel9k
-    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    # Install Spaceship ZSH
+    sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+    sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 }
 

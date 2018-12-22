@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)
 
-![mydotfiles](https://user-images.githubusercontent.com/34389409/50375760-4e684380-0635-11e9-94fb-9c26b3b92034.png)
+![mydotfiles](https://user-images.githubusercontent.com/34389409/50376028-680b8a00-0639-11e9-9836-309d5db59be5.png)
 
 ## Installation
 
