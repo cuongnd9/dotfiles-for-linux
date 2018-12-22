@@ -2,7 +2,9 @@
 
 📝 dotfiles for Elementary OS
 
-![screenshot from 2018-10-27 17 35 40](https://user-images.githubusercontent.com/34389409/47603058-d274c500-da10-11e8-8161-2b264b253dd2.png)
+![](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)
+
+![mydotfiles](https://user-images.githubusercontent.com/34389409/50375760-4e684380-0635-11e9-94fb-9c26b3b92034.png)
 
 ## Installation
 
