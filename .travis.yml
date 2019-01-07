@@ -5,4 +5,5 @@ before_script:
     - cd dotfiles
 
 script:
+    - chmod +x install.sh 
     - yes | ./install.sh
