@@ -88,11 +88,19 @@ function config_dotfiles {
 }
 
 
-function install_applications {
+function install_environments {
 
     # Install Node.js v10.x
     sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
+    
+    # Install Ruby
+    sudo apt-get install ruby-full
+
+}
+
+
+function install_applications {
 
     # Install snap
     sudo apt update
@@ -122,4 +130,5 @@ install_theme
 setting_system
 install_zsh
 config_dotfiles
+install_environments
 install_applications
