@@ -74,16 +74,9 @@ function install_zsh {
 }
 
 
-# Download .dotfiles and install
 function config_dotfiles {
-    
-    cd ~/dotfiles
-    echo "Config dotfiles"
 
-    cp zsh/zshrc ~/.zshrc
-
-    cp git/gitconfig ~/.gitconfig
-    cp git/gitignore ~/.gitigrnore
+    cp .zshrc ~/.zshrc
 
 }
 
@@ -123,6 +116,13 @@ function install_applications {
 
 }
 
+function clean {
+
+    cd ..
+    sudo rm -rf dotfiles
+
+}
+
 
 
 initialize
@@ -132,3 +132,4 @@ install_zsh
 config_dotfiles
 install_environments
 install_applications
+clean
