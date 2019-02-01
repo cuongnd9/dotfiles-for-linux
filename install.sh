@@ -86,9 +86,6 @@ function install_environments {
     # Install Node.js v10.x
     sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
-    
-    # Install Ruby
-    sudo apt-get install ruby-full
 
 }
 
@@ -99,20 +96,29 @@ function install_applications {
     sudo apt update
     sudo apt install snapd
 
-    # Install Visual Studio Code
-    sudo snap install vscode --classic
-
     # Install Sublime Text 3
     sudo snap install sublime-text --classic
+
+    # Install Visual Studio Code
+    sudo snap install vscode --classic
 
     # Install Atom
     sudo snap install atom --classic
 
-    # Install Chromium
-    sudo snap install chromium
-
     # Install Mailspring
     sudo snap install mailspring
+
+    # Install Robo3T
+    sudo snap install robo3t-snap
+
+    # Install Postman
+    sudo snap install postman
+
+    # Install Spotify
+    sudo snap install spotify
+
+    # Install VLC
+    sudo snap install vlc
 
 }
 
