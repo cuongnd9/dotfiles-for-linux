@@ -1,11 +1,11 @@
-# My dotfiles
-
-📝 dotfiles for Elementary OS.
+# dotfiles
 
 [![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
 [![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE)
 
-![screen](https://user-images.githubusercontent.com/34389409/50761931-32ec7200-129e-11e9-9e9b-ece50847729c.png)
+> 📝 dotfiles for Elementary OS.
+
+![dotfiles](https://user-images.githubusercontent.com/34389409/53224867-c17b4e00-36a8-11e9-8120-425db7b6ade5.png)
 
 ## Install
 

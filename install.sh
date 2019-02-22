@@ -77,6 +77,7 @@ function install_zsh {
 function config_dotfiles {
 
     cp .zshrc ~/.zshrc
+    cp .bash_profile ~/.bash_profile
 
 }
 
@@ -86,6 +87,9 @@ function install_environments {
     # Install Node.js v10.x
     sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
+
+    # Install Java
+    sudo apt install openjdk-8-jre openjdk-8-jdk
 
 }
 
