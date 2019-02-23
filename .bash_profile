@@ -1,3 +1,5 @@
+export PATH=$PATH:~/.npm-global/bin
+
 export PATH=$PATH:/home/ndc07/flutter/bin
 
 export ANDROID_HOME=$HOME/Android/Sdk
