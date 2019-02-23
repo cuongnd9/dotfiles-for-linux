@@ -8,4 +8,4 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 
-alias emu="$ANDROID_HOME/tools/emulator"
+alias developer-menu='adb shell input keyevent 82'
