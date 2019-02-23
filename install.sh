@@ -3,45 +3,13 @@
 # Initialize
 function initialize {
 
-    sudo apt-get update
-    sudo apt-get install -y curl
-    sudo apt-get install -y git
+    echo "Initializing..."
 
-}
-
-
-# Install UI
-function install_theme {
-
-    # Install elementary Tweaks
-    sudo apt-get install software-properties-common
-    sudo add-apt-repository ppa:philip.scott/elementary-tweaks
-    sudo apt-get update
-    sudo apt-get install elementary-tweaks    
-
-    # Install dconf-tools
-    sudo apt-get install dconf-tools
-    
-    # Color Scheme for Pantheon terminal
-    gsettings set io.elementary.terminal.settings palette '#4d4d4d:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#bbbbbb:#555555:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#ffffff'
-    
-    gsettings set io.elementary.terminal.settings background '#282a36'
-
-    gsettings set io.elementary.terminal.settings foreground '#f8f8f2'
-
-    gsettings set io.elementary.terminal.settings cursor-color '#f6f7ec'
-
-}
-
-
-# Setting System
-function setting_system {
-
-    # Setting Pantheon Terminal
-    gsettings set io.elementary.terminal.settings remember-tabs false
-
-    # Setting File
-    gsettings set io.elementary.files.preferences restore-tabs false
+    sudo apt update
+    sudo apt install -y curl
+    sudo apt install -y git
+    git config --global user.email 'justcuongw@gmail.com'
+    git config --global user.name 'Cuong Duy Nguyen Tran'
 
 }
 
@@ -50,32 +18,29 @@ function setting_system {
 function install_zsh {
 
     echo "Installing zsh and oh-my-zsh..."
+    
+    sudo apt install -y zsh
 
-    sudo apt-get install -y zsh
+    # Set zsh default shell
+    sudo chsh -s $(which zsh)
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-    sudo chsh -s /usr/bin/zsh
-
-    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-    
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-
-    # Install Fonts Powerline
-    sudo apt-get install fonts-powerline
-
-    # Set Monospace font
-    org.gnome.desktop.interface monospace-font-name 'Hack 10'
-    
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+        
     # Install Spaceship ZSH
+    echo "Installing Spaceship ZSH..."
     sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
+   
 }
 
 
 function config_dotfiles {
-
+    
+    rm ~/.zshrc
+    rm ~/.bash_profile
     cp .zshrc ~/.zshrc
     cp .bash_profile ~/.bash_profile
 
@@ -84,45 +49,64 @@ function config_dotfiles {
 
 function install_environments {
 
+    echo "Installing environments..."
+
+    # Install nvm
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
     # Install Node.js v10.x
-    sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
-    # Install Java
-    sudo apt install openjdk-8-jre openjdk-8-jdk
-
+    # Install build tools
+    sudo apt install -y build-essential
+    
+    # Install Yarn
+    sudo apt install -y yarn
+    
+    # Install Docker
+    sudo apt update
+    sudo apt install -y apt-transport-https ca-certificates software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+    sudo apt update
+    apt-cache policy docker-ce
+    sudo apt install docker-ce
+    # Docker without sudo
+    sudo usermod -aG docker ${USER}
+    
+    # Install Docker Compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    
 }
 
 
 function install_applications {
 
+    echo "Installing applications..."
+
+    # Install Elementary Tweaks
+    sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+    sudo apt install -y elementary-tweaks
+
     # Install snap
-    sudo apt update
-    sudo apt install snapd
+    sudo apt install -y snapd
 
     # Install Sublime Text 3
     sudo snap install sublime-text --classic
 
     # Install Visual Studio Code
-    sudo snap install vscode --classic
-
-    # Install Atom
-    sudo snap install atom --classic
-
-    # Install Mailspring
-    sudo snap install mailspring
-
-    # Install Robo3T
-    sudo snap install robo3t-snap
+    sudo snap install code --classic
 
     # Install Postman
     sudo snap install postman
-
+    
+    # Install DBeaver
+    sudo snap install dbeaver-ce
+    
     # Install Spotify
     sudo snap install spotify
-
-    # Install VLC
-    sudo snap install vlc
 
 }
 
@@ -133,13 +117,19 @@ function clean {
 
 }
 
-
+function restart {
+    
+    sudo shutdown -r +5 "Elementary OS will 😴 restart in 5 minutes. Please 🛡️ save your work."
+    
+    echo "🎉🎉🎉 Congratulations!!!! 🎉🎉🎉"
+    
+}
 
 initialize
-install_theme
-setting_system
 install_zsh
 config_dotfiles
 install_environments
 install_applications
 clean
+restart
+

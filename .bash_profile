@@ -1,9 +1,15 @@
-export PATH=$PATH:/home/ndc07/flutter/bin
+# git alias
+alias ..="cd .."
+alias gs="git status"
+alias gp="git pull"
+alias gb="git branch"
+alias ga="git add ."
+alias gc="git commit -m $1"
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
+# alias developer-menu='adb shell input keyevent 82'
 
-alias emu="$ANDROID_HOME/tools/emulator"
+export PATH=$PATH:~/.npm-global/bin
+
+# export GOPATH=$HOME/go
+# export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
