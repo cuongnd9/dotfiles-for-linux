@@ -7,7 +7,23 @@
 
 ## Install
 
-![install](https://user-images.githubusercontent.com/34389409/53301220-a7956300-3882-11e9-9bb9-4eff46dc3ca3.png)
+### Step 1: Clone this project
+
+```
+$ git clone https://github.com/jade28/dotfiles.git && cd dotfiles
+```
+
+### Step 2: Allow execute shell script
+
+```
+$ chmod +x install.sh
+```
+
+### Step 3: Run `install.sh` file
+
+```
+$ yes | ./install.sh
+```
 
 ## License
 

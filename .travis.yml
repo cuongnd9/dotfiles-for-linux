@@ -1,7 +1,7 @@
 language: bash
 
 before_script:
-    - git clone https://github.com/jade28/dotfiles.git
+    - git clone https://github.com/cuongw/dotfiles.git
     - cd dotfiles
 
 script:
