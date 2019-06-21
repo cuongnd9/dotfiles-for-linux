@@ -28,18 +28,6 @@ function install_theme {
 }
 
 
-# Setting System
-function setting_system {
-
-    # Setting Pantheon Terminal
-    gsettings set io.elementary.terminal.settings remember-tabs false
-
-    # Setting File
-    gsettings set io.elementary.files.preferences restore-tabs false
-
-}
-
-
 # Install zsh and oh-my-zsh
 function install_zsh {
 
@@ -124,7 +112,6 @@ function clean {
 
 initialize
 install_theme
-setting_system
 install_zsh
 config_dotfiles
 install_environments
