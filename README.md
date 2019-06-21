@@ -9,19 +9,19 @@
 
 ### Step 1: Clone this project
 
-```
-$ git clone https://github.com/jade28/dotfiles.git && cd dotfiles
+```sh
+$ https://github.com/cuongw/dotfiles.git && cd dotfiles
 ```
 
 ### Step 2: Allow execute shell script
 
-```
+```sh
 $ chmod +x install.sh
 ```
 
 ### Step 3: Run `install.sh` file
 
-```
+```sh
 $ yes | ./install.sh
 ```
 
