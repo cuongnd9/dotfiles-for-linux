@@ -84,12 +84,15 @@ function config_dotfiles {
 
 function install_environments {
 
+    # Install nvm
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
     # Install Node.js v10.x
-    sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
-    # Install Java
-    sudo apt install openjdk-8-jre openjdk-8-jdk
+    # Install build tools
+    sudo apt-get install -y build-essential
 
 }
 
