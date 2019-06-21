@@ -104,16 +104,13 @@ function install_applications {
     sudo snap install sublime-text --classic
 
     # Install Visual Studio Code
-    sudo snap install vscode --classic
+    sudo snap install code --classic
 
-    # Install Atom
-    sudo snap install atom --classic
+    # Install Brave
+    sudo snap install brave
 
     # Install Mailspring
     sudo snap install mailspring
-
-    # Install Robo3T
-    sudo snap install robo3t-snap
 
     # Install Postman
     sudo snap install postman
@@ -121,8 +118,8 @@ function install_applications {
     # Install Spotify
     sudo snap install spotify
 
-    # Install VLC
-    sudo snap install vlc
+    # Install Zenkit
+    sudo snap install zenkit
 
 }
 
