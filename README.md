@@ -5,6 +5,8 @@
 
 > 📝 My dotfiles for Elementary OS.
 
+![dotfiles](https://user-images.githubusercontent.com/34389409/59966804-99fb9b80-954b-11e9-8ce2-13caea228312.png)
+
 ## Install
 
 ### Step 1: Clone this project
