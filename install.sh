@@ -34,7 +34,6 @@ function install_zsh {
     echo "Installing zsh and oh-my-zsh..."
 
     sudo apt-get install -y zsh
-    exec zsh
     sudo chsh -s $(which zsh)
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -46,7 +45,8 @@ function install_zsh {
     # Install Spaceship ZSH
     sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
+   
+    exec zsh
 }
 
 
