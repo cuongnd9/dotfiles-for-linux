@@ -33,8 +33,6 @@ function install_zsh {
 
     echo "Installing zsh and oh-my-zsh..."
     
-    sudo apt-get update
-
     sudo apt install zsh
 
     # Set zsh default shell
