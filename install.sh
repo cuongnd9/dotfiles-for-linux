@@ -32,12 +32,17 @@ function install_theme {
 function install_zsh {
 
     echo "Installing zsh and oh-my-zsh..."
+    
+    sudo apt-get update
 
-    sudo apt-get install -y zsh
+    sudo apt install zsh
+
+    # Set zsh default shell
+    sudo chsh -s $(which zsh)
+
+    exec zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-    sudo chsh -s /usr/bin/zsh
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
     
