@@ -3,9 +3,9 @@
 # Initialize
 function initialize {
 
-    sudo apt-get update
-    sudo apt-get install -y curl
-    sudo apt-get install -y git
+    sudo apt update
+    sudo apt install -y curl
+    sudo apt install -y git
 
 }
 
@@ -14,7 +14,7 @@ function initialize {
 function install_theme {
 
     # Install dconf-tools
-    sudo apt-get install dconf-tools
+    sudo apt install dconf-tools
     
     # Color Scheme for Pantheon terminal
     gsettings set io.elementary.terminal.settings palette '#011627:#EF5350:#22da6e:#addb67:#82aaff:#c792ea:#21c7a8:#ffffff:#575656:#ef5350:#22da6e:#ffeb95:#82aaff:#c792ea:#7fdbca:#ffffff'
@@ -68,10 +68,10 @@ function install_environments {
 
     # Install Node.js v10.x
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    sudo apt install -y nodejs
 
     # Install build tools
-    sudo apt-get install -y build-essential
+    sudo apt install -y build-essential
 
 }
 
