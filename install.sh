@@ -3,9 +3,9 @@
 # Initialize
 function initialize {
 
-    sudo apt-get update
-    sudo apt-get install -y curl
-    sudo apt-get install -y git
+    sudo apt update
+    sudo apt install -y curl
+    sudo apt install -y git
 
 }
 
@@ -14,7 +14,7 @@ function initialize {
 function install_theme {
 
     # Install dconf-tools
-    sudo apt-get install dconf-tools
+    sudo apt install dconf-tools
     
     # Color Scheme for Pantheon terminal
     gsettings set io.elementary.terminal.settings palette '#011627:#EF5350:#22da6e:#addb67:#82aaff:#c792ea:#21c7a8:#ffffff:#575656:#ef5350:#22da6e:#ffeb95:#82aaff:#c792ea:#7fdbca:#ffffff'
@@ -32,9 +32,12 @@ function install_theme {
 function install_zsh {
 
     echo "Installing zsh and oh-my-zsh..."
+    
+    sudo apt install zsh
 
-    sudo apt-get install -y zsh
+    # Set zsh default shell
     sudo chsh -s $(which zsh)
+
     exec zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -46,7 +49,7 @@ function install_zsh {
     # Install Spaceship ZSH
     sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
+   
 }
 
 
@@ -65,10 +68,10 @@ function install_environments {
 
     # Install Node.js v10.x
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    sudo apt install -y nodejs
 
     # Install build tools
-    sudo apt-get install -y build-essential
+    sudo apt install -y build-essential
 
 }
 
@@ -108,7 +111,11 @@ function clean {
 
 }
 
-
+function reboot {
+    
+    sudo reboot
+    
+}
 
 initialize
 install_theme
@@ -117,3 +124,4 @@ config_dotfiles
 install_environments
 install_applications
 clean
+reboot
