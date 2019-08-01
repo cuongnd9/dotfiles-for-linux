@@ -12,7 +12,7 @@
 ### Step 1: Clone this project
 
 ```sh
-$ https://github.com/cuongw/dotfiles.git && cd dotfiles
+$ ghttps://github.com/cuongw/dotfiles.git && cd dotfiles
 ```
 
 ### Step 2: Allow execute shell script
