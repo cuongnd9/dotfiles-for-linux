@@ -10,27 +10,29 @@
   <img src='./images/joker.gif' height=200 />
 </p>
 
-## Install install.sh file
+## Installation
 
-### Step 1: Clone this project
+### install.sh file
+
+#### Step 1: Clone this project
 
 ```sh
 $ ghttps://github.com/cuongw/dotfiles.git && cd dotfiles
 ```
 
-### Step 2: Allow execute shell script
+#### Step 2: Allow execute shell script
 
 ```sh
 $ chmod +x install.sh
 ```
 
-### Step 3: Run `install.sh` file
+#### Step 3: Run `install.sh` file
 
 ```sh
 $ yes | ./install.sh
 ```
 
-## Install ibus-unikey
+### ibus-unikey
 
 ```sh
 $ ibus-daemon -drx
@@ -42,14 +44,14 @@ $ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus'
 
 Add **ibus-daemon -drx** to **startup**
 
-## Generating a new SSH key
+### Generating a new SSH key
 
 ```sh
 $ ssh-keygen -t rsa -b 4096 -C "justcuongw@gmail.com"
 $ cat ~/.ssh/id_rsa.pub
 ```
 
-## Install Fira Code font
+### Fira Code font
 
 ```sh
 $ chmod +x install-fira-code-font.sh
@@ -64,6 +66,11 @@ $ ./install-fira-code-font.sh
     "editor.fontLigatures": true
 } 
 ```
+
+### Other
+
+- [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
+- [SpotifyAdBlock](https://github.com/x0uid/SpotifyAdBlock) - Block all Spotify Ads
 
 ## License
 
