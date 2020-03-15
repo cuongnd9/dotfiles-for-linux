@@ -7,3 +7,4 @@ before_script:
 script:
     - chmod +x install.sh 
     - yes | ./install.sh
+
