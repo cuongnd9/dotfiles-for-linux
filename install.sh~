@@ -39,10 +39,12 @@ function install_zsh {
 
     echo "Installing zsh and oh-my-zsh..."
     
-    sudo apt install -y zsh
+    sudo apt install zsh
 
     # Set zsh default shell
     sudo chsh -s $(which zsh)
+
+    exec zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -79,17 +81,15 @@ function install_environments {
     # Install build tools
     sudo apt install -y build-essential
     
-    # Install Yarn
-    sudo apt install -y yarn
-    
     # Install Docker
     sudo apt update
-    sudo apt install -y apt-transport-https ca-certificates software-properties-common
+    sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
     sudo apt update
     apt-cache policy docker-ce
     sudo apt install docker-ce
+    sudo systemctl status docker
     # Docker without sudo
     sudo usermod -aG docker ${USER}
     
@@ -123,11 +123,11 @@ function install_applications {
     # Install DBeaver
     sudo snap install dbeaver-ce
 
+    # Install Spotify
+    sudo snap install spotify
+
     # Install Telegram
     sudo snap install telegram-desktop
-    
-    # Install Mailspring
-    sudo snap install mailspring
 
 }
 
@@ -138,20 +138,18 @@ function clean {
 
 }
 
-function restart {
+function reboot {
     
-    sudo shutdown -r +5 "Elementary OS will 😴 restart in 5 minutes. Please 🛡️ save your work."
-    
-    echo "🎉🎉🎉 Congratulations!!!! 🎉🎉🎉"
+    sudo reboot
     
 }
 
-# initialize
+initialize
 # install_theme
 install_zsh
-# config_dotfiles
-# install_environments
-# install_applications
+config_dotfiles
+install_environments
+install_applications
 # clean
-# restart
+# reboot
 

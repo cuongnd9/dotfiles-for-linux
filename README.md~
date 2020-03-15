@@ -1,13 +1,16 @@
 # dotfiles
 
 [![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
-[![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE.md)
 
 > 📝 My dotfiles for Elementary OS.
 
-![dotfiles](https://user-images.githubusercontent.com/34389409/59966804-99fb9b80-954b-11e9-8ce2-13caea228312.png)
+<p>
+  <img src='./images/rocket-raccoon.gif' height=200 />
+  <img src='./images/joker.gif' height=200 />
+</p>
 
-## Install
+## Install install.sh file
 
 ### Step 1: Clone this project
 
@@ -25,6 +28,25 @@ $ chmod +x install.sh
 
 ```sh
 $ yes | ./install.sh
+```
+
+## Install ibus-unikey**
+
+```sh
+$ ibus-daemon -drx
+$ sudo apt install -y ibus-unikey
+$ ibus restart
+$ ibus-setup
+$ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Unikey')]"
+```
+
+Add **ibus-daemon -drx** to **startup**
+
+## Generating a new SSH key
+
+```sh
+$ ssh-keygen -t rsa -b 4096 -C "justcuongw@gmail.com"
+$ cat ~/.ssh/id_rsa.pub
 ```
 
 ## License

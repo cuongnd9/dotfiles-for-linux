@@ -30,7 +30,7 @@ $ chmod +x install.sh
 $ yes | ./install.sh
 ```
 
-## Install ibus-unikey**
+## Install ibus-unikey
 
 ```sh
 $ ibus-daemon -drx
