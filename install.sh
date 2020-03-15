@@ -130,6 +130,9 @@ function install_applications {
     
     # Install Mailspring
     sudo snap install mailspring
+    
+    # Install Spotify
+    sudo snap install spotify
 
 }
 
