@@ -46,11 +46,11 @@ function install_zsh {
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-    
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-    
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+        
     # Install Spaceship ZSH
+    echo "Installing Spaceship ZSH..."
     sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
    
@@ -58,7 +58,9 @@ function install_zsh {
 
 
 function config_dotfiles {
-
+    
+    rm ~/.zshrc
+    rm ~/.bash_profile
     cp .zshrc ~/.zshrc
     cp .bash_profile ~/.bash_profile
 
@@ -146,12 +148,12 @@ function restart {
     
 }
 
-# initialize
-# install_theme
+initialize
+install_theme
 install_zsh
-# config_dotfiles
-# install_environments
-# install_applications
-# clean
-# restart
+config_dotfiles
+install_environments
+install_applications
+clean
+restart
 

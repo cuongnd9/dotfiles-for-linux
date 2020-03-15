@@ -49,6 +49,22 @@ $ ssh-keygen -t rsa -b 4096 -C "justcuongw@gmail.com"
 $ cat ~/.ssh/id_rsa.pub
 ```
 
+## Install Fira Code font
+
+```sh
+$ chmod +x install-fira-code-font.sh
+$ ./install-fira-code-font.sh
+```
+
+**VS Code**
+
+```jon
+{
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true
+} 
+```
+
 ## License
 
 MIT
