@@ -1,5 +1,7 @@
 # dotfiles
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
+[![Hits-of-Code](https://hitsofcode.com/github/cuongw/dotfiles)](https://hitsofcode.com/view/github/cuongw/dotfiles)
 [![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
 [![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE.md)
 
@@ -10,25 +12,10 @@
   <img src='./images/joker.gif' height=200 />
 </p>
 
-## Installation
-
-### install.sh file
-
-#### Step 1: Clone this project
-
-```sh
-$ ghttps://github.com/cuongw/dotfiles.git && cd dotfiles
-```
-
-#### Step 2: Allow execute shell script
+### General installation
 
 ```sh
 $ chmod +x install.sh
-```
-
-#### Step 3: Run `install.sh` file
-
-```sh
 $ yes | ./install.sh
 ```
 
@@ -69,8 +56,26 @@ $ ./install-fira-code-font.sh
 
 ### Other
 
+- [night-owl-pantheon](https://github.com/cuongw/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [SpotifyAdBlock](https://github.com/x0uid/SpotifyAdBlock) - Block all Spotify Ads
+- [Telegram](https://desktop.telegram.org/)
+- [Skype](https://www.skype.com/en/get-skype/)
+- [Slack](https://slack.com/intl/en-vn/downloads/linux)
+- [Mailspring](https://getmailspring.com/download)
+- [Dockstation](https://dockstation.io/)
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Code">💻</a> <a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Documentation">📖</a> <a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Tests">⚠️</a> <a href="#review-cuongw" title="Reviewed Pull Requests">👀</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ## License
 
