@@ -93,9 +93,6 @@ function install_applications {
     # Install snap
     sudo apt install -y snapd
 
-    # Install Sublime Text 3
-    sudo snap install sublime-text --classic
-
     # Install Visual Studio Code
     sudo snap install code --classic
 
