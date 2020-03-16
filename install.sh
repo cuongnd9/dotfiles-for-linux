@@ -14,26 +14,6 @@ function initialize {
 }
 
 
-# Install UI
-function install_theme {
-
-    echo "Installing theme..."
-
-    # Install dconf-tools
-    sudo apt install -y dconf-tools
-    
-    # Color Scheme for Pantheon terminal
-    gsettings set io.elementary.terminal.settings palette '#011627:#EF5350:#22da6e:#addb67:#82aaff:#c792ea:#21c7a8:#ffffff:#575656:#ef5350:#22da6e:#ffeb95:#82aaff:#c792ea:#7fdbca:#ffffff'
-    
-    gsettings set io.elementary.terminal.settings background '#011627'
-
-    gsettings set io.elementary.terminal.settings foreground '#d6deeb'
-
-    gsettings set io.elementary.terminal.settings cursor-color '#7e57c2'
-
-}
-
-
 # Install zsh and oh-my-zsh
 function install_zsh {
 
@@ -124,12 +104,6 @@ function install_applications {
     
     # Install DBeaver
     sudo snap install dbeaver-ce
-
-    # Install Telegram
-    sudo snap install telegram-desktop
-    
-    # Install Mailspring
-    sudo snap install mailspring
     
     # Install Spotify
     sudo snap install spotify
@@ -152,7 +126,6 @@ function restart {
 }
 
 initialize
-install_theme
 install_zsh
 config_dotfiles
 install_environments
