@@ -27,6 +27,7 @@ $ sudo apt install -y ibus-unikey
 $ ibus restart
 $ ibus-setup
 $ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Unikey')]"
+$ sudo im-config
 ```
 
 Add **ibus-daemon -drx** to **startup**
