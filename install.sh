@@ -62,7 +62,9 @@ function install_environments {
     sudo apt install -y build-essential
     
     # Install Yarn
-    sudo apt install -y yarn
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update && sudo apt install -y yarn
     
     # Install Docker
     sudo apt update
