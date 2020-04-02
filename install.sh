@@ -9,7 +9,7 @@ function initialize {
     sudo apt install -y curl
     sudo apt install -y git
     git config --global user.email 'justcuongw@gmail.com'
-    git config --global user.name 'Cuong Duy Nguyen Tran'
+    git config --global user.name 'Cuong Duy Nguyen'
 
 }
 
