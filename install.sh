@@ -97,6 +97,9 @@ function install_applications {
 
     # Install Visual Studio Code
     sudo snap install code --classic
+    
+    # Install kubectl
+    snap install kubectl --classic
 
     # Install Postman
     sudo snap install postman
