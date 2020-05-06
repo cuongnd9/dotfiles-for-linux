@@ -1,7 +1,5 @@
 # dotfiles
 
-<img align="right" width="100" height="100" src="https://elementary.io/favicon.ico">
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 [![Hits-of-Code](https://hitsofcode.com/github/cuongw/dotfiles)](https://hitsofcode.com/view/github/cuongw/dotfiles)
 [![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
@@ -12,8 +10,7 @@
 ### General installation
 
 ```sh
-$ chmod +x install.sh
-$ yes | ./install.sh
+curl -sSf https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh | sudo sh
 ```
 
 ### ibus-unikey

@@ -1,10 +1,5 @@
 language: bash
 
-before_script:
-    - git clone https://github.com/cuongw/dotfiles.git
-    - cd dotfiles
-
 script:
-    - chmod +x install.sh 
-    - yes | ./install.sh
+    - curl -sSf https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh | sudo sh
 
