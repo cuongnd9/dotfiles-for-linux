@@ -99,6 +99,15 @@ function install_applications {
     # Install Visual Studio Code
     sudo snap install code --classic
 
+    # Install kubectl
+    snap install kubectl --classic    
+
+    # Install k9s
+    sudo snap install k9s
+
+    # Install helm
+    sudo snap install helm --classic
+
     # Install Postman
     sudo snap install postman
     

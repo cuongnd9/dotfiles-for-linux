@@ -1,16 +1,13 @@
 # dotfiles
 
+<img align="right" width="100" height="100" src="https://elementary.io/favicon.ico">
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 [![Hits-of-Code](https://hitsofcode.com/github/cuongw/dotfiles)](https://hitsofcode.com/view/github/cuongw/dotfiles)
 [![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
 [![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE.md)
 
 > 📝 My dotfiles for Elementary OS.
-
-<p>
-  <img src='./images/rocket-raccoon.gif' height=200 />
-  <img src='./images/joker.gif' height=200 />
-</p>
 
 ### General installation
 
