@@ -10,7 +10,8 @@
 ### General installation
 
 ```sh
-curl -sSf https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh | sudo sh
+$ chmod +x install.sh
+$ yes | ./install.sh
 ```
 
 ### ibus-unikey
