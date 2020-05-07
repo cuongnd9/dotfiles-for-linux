@@ -1,16 +1,11 @@
 # dotfiles
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
-[![Hits-of-Code](https://hitsofcode.com/github/cuongw/dotfiles)](https://hitsofcode.com/view/github/cuongw/dotfiles)
-[![Build Status](https://travis-ci.org/cuongw/dotfiles.svg?branch=master)](https://travis-ci.org/cuongw/dotfiles)
-[![](https://img.shields.io/github/license/cuongw/dotfiles.svg)](https://github.com/cuongw/dotfiles/blob/master/LICENSE.md)
+[![Hits-of-Code](https://hitsofcode.com/github/103cuong/dotfiles)](https://hitsofcode.com/view/github/103cuong/dotfiles)
+[![Build Status](https://travis-ci.org/103cuong/dotfiles.svg?branch=master)](https://travis-ci.org/103cuong/dotfiles)
+[![](https://img.shields.io/github/license/103cuong/dotfiles.svg)](https://github.com/103cuong/dotfiles/blob/master/LICENSE.md)
 
-> 📝 My dotfiles for Elementary OS.
-
-<p>
-  <img src='./images/rocket-raccoon.gif' height=200 />
-  <img src='./images/joker.gif' height=200 />
-</p>
+📝 My dotfiles for Elementary OS.
 
 ### General installation
 
@@ -56,7 +51,7 @@ $ ./install-fira-code-font.sh
 
 ### Other
 
-- [night-owl-pantheon](https://github.com/cuongw/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
+- [night-owl-pantheon](https://github.com/103cuong/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [SpotifyAdBlock](https://github.com/x0uid/SpotifyAdBlock) - Block all Spotify Ads
 - [Telegram](https://desktop.telegram.org/)
@@ -71,7 +66,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Code">💻</a> <a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Documentation">📖</a> <a href="https://github.com/cuongw/thinid/commits?author=cuongw" title="Tests">⚠️</a> <a href="#review-cuongw" title="Reviewed Pull Requests">👀</a></td></tr></table>
+<table><tr><td align="center"><a href="http://103cuong.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/103cuong/thinid/commits?author=103cuong" title="Code">💻</a> <a href="https://github.com/103cuong/thinid/commits?author=103cuong" title="Documentation">📖</a> <a href="https://github.com/103cuong/thinid/commits?author=103cuong" title="Tests">⚠️</a> <a href="#review-103cuong" title="Reviewed Pull Requests">👀</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 

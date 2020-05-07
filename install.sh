@@ -8,8 +8,8 @@ function initialize {
     sudo apt update
     sudo apt install -y curl
     sudo apt install -y git
-    git config --global user.email 'justcuongw@gmail.com'
-    git config --global user.name 'Cuong Duy Nguyen Tran'
+    git config --global user.email '103cuong@gmail.com'
+    git config --global user.name 'Cuong Duy Nguyen'
 
 }
 
@@ -101,6 +101,15 @@ function install_applications {
 
     # Install Visual Studio Code
     sudo snap install code --classic
+
+    # Install kubectl
+    snap install kubectl --classic    
+
+    # Install k9s
+    sudo snap install k9s
+
+    # Install helm
+    sudo snap install helm --classic
 
     # Install Postman
     sudo snap install postman
