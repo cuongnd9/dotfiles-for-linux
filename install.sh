@@ -106,7 +106,7 @@ function install_applications {
     snap install kubectl --classic    
 
     # Install k9s
-    sudo snap install k9s
+    snap install k9s --edge --devmode
 
     # Install helm
     sudo snap install helm --classic
