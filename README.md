@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/103cuong/dotfiles.svg?branch=master)](https://travis-ci.org/103cuong/dotfiles)
 [![](https://img.shields.io/github/license/103cuong/dotfiles.svg)](https://github.com/103cuong/dotfiles/blob/master/LICENSE.md)
 
-📝 My dotfiles for Elementary OS.
+📝 My dotfiles for ElementaryOS.
 
 ### General installation
 
