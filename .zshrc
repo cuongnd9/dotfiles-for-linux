@@ -1,4 +1,4 @@
-export ZSH="/home/cuongw/.oh-my-zsh"
+export ZSH="/home/103cuong/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
