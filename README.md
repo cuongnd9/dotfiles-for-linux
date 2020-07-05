@@ -10,7 +10,7 @@
 ### General installation
 
 ```sh
-$ yes | ./install.sh
+$ sh -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh)"
 ```
 
 ### ibus-unikey
