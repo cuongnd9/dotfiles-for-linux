@@ -10,7 +10,6 @@
 ### General installation
 
 ```sh
-$ chmod +x install.sh
 $ yes | ./install.sh
 ```
 
@@ -36,13 +35,12 @@ $ cat ~/.ssh/id_rsa.pub
 ### Fira Code font
 
 ```sh
-$ chmod +x install-fira-code-font.sh
 $ ./install-fira-code-font.sh
 ```
 
 **VS Code**
 
-```jon
+```json
 {
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true
