@@ -35,7 +35,7 @@ $ cat ~/.ssh/id_rsa.pub
 ### Fira Code font
 
 ```sh
-$ ./install-fira-code-font.sh
+$ sh -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install-fira-code-font.sh)"
 ```
 
 **VS Code**
