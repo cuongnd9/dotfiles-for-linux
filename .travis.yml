@@ -1,8 +1,4 @@
 language: bash
 
-before_script:
-    - git clone https://github.com/103cuong/dotfiles.git
-    - cd dotfiles
-
 script:
-    - yes | ./install.sh
+    - sh -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh)"
