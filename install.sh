@@ -66,6 +66,12 @@ function install_environments {
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt update
     sudo apt install yarn
+
+    # Install n
+    yarn global add n
+    sudo mkdir -p /usr/local/n
+    sudo chown -R $(whoami) /usr/local/n
+    sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
     
     # Install Docker
     sudo apt update
