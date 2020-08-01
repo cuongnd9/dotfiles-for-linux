@@ -5,12 +5,12 @@
 [![Build Status](https://travis-ci.org/103cuong/dotfiles.svg?branch=master)](https://travis-ci.org/103cuong/dotfiles)
 [![](https://img.shields.io/github/license/103cuong/dotfiles.svg)](https://github.com/103cuong/dotfiles/blob/master/LICENSE.md)
 
-📝 My dotfiles for ElementaryOS.
+> 💻 dotfiles and 🚀 more (ElementaryOS).
 
 ### General installation
 
 ```sh
-$ yes | sh -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh)"
+$ yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh)"
 ```
 
 ### ibus-unikey
@@ -51,11 +51,7 @@ $ sh -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/
 
 - [night-owl-pantheon](https://github.com/103cuong/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
-- [SpotifyAdBlock](https://github.com/x0uid/SpotifyAdBlock) - Block all Spotify Ads
 - [Telegram](https://desktop.telegram.org/)
-- [Skype](https://www.skype.com/en/get-skype/)
-- [Slack](https://slack.com/intl/en-vn/downloads/linux)
-- [Mailspring](https://getmailspring.com/download)
 - [Dockstation](https://dockstation.io/)
 
 ## Contributors
