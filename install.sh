@@ -80,6 +80,10 @@ function install_environments {
     sudo apt update
     sudo apt install python3.8
 
+    # Install Pip3
+    sudo apt update
+    sudo apt install python3-pip
+
     # Install Docker
     sudo apt update
     sudo apt install -y apt-transport-https ca-certificates software-properties-common
