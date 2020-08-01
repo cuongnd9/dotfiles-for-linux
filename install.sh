@@ -3,7 +3,7 @@
 # Initialize
 function initialize {
 
-    echo "Initializing..."
+    echo "🚲 Initializing..."
 
     sudo apt update
     sudo apt install -y curl
@@ -17,7 +17,7 @@ function initialize {
 # Install zsh and oh-my-zsh
 function install_zsh {
 
-    echo "Installing zsh and oh-my-zsh..."
+    echo "🚥 Installing zsh and oh-my-zsh..."
     
     sudo apt install -y zsh
 
@@ -30,7 +30,7 @@ function install_zsh {
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         
     # Install Spaceship ZSH
-    echo "Installing Spaceship ZSH..."
+    echo "🛰 Installing Spaceship ZSH..."
     sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
    
@@ -49,7 +49,7 @@ function config_dotfiles {
 
 function install_environments {
 
-    echo "Installing environments..."
+    echo "🌲 Installing environments..."
 
     # Install nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -73,6 +73,17 @@ function install_environments {
     sudo chown -R $(whoami) /usr/local/n
     sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
     
+    # Install Python3
+    sudo apt update
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt update
+    sudo apt install python3.8
+
+    # Install Pip3
+    sudo apt update
+    sudo apt install python3-pip
+
     # Install Docker
     sudo apt update
     sudo apt install -y apt-transport-https ca-certificates software-properties-common
@@ -93,7 +104,7 @@ function install_environments {
 
 function install_applications {
 
-    echo "Installing applications..."
+    echo "📱 Installing applications..."
 
     # Install Elementary Tweaks
     sudo add-apt-repository ppa:philip.scott/elementary-tweaks
@@ -123,8 +134,17 @@ function install_applications {
     # Install DBeaver
     sudo snap install dbeaver-ce
     
-    # Install Spotify
-    sudo snap install spotify
+    # Install WebStorm
+    sudo snap install webstorm --classic
+
+    # Install DataGrip
+    sudo snap install datagrip --classic
+
+    # Install PyCharm
+    sudo snap install pycharm-professional --classic
+
+    # Install GoLand
+    sudo snap install goland --classic
 
 }
 
