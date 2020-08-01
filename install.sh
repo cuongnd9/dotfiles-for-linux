@@ -80,6 +80,12 @@ function install_environments {
     sudo apt update
     sudo apt install python3.8
 
+    # Install Go
+    sudo apt install golang
+    echo 'export GOPATH=$HOME/go' >> ~/.zshrc
+    echo 'export PATH=${PATH}:${GOPATH}/bin' >> ~/.zshrc 
+    source ~/.zshrc 
+
     # Install Pip3
     sudo apt update
     sudo apt install python3-pip
