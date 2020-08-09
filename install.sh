@@ -41,6 +41,8 @@ function config_dotfiles {
     
     rm ~/.zshrc
     rm ~/.bash_profile
+    curl https://raw.githubusercontent.com/103cuong/dotfiles/master/.zshrc --output .zshrc
+    curl https://raw.githubusercontent.com/103cuong/dotfiles/master/.bash_profile --output .bash_profile
     cp .zshrc ~/.zshrc
     cp .bash_profile ~/.bash_profile
 
@@ -154,18 +156,11 @@ function install_applications {
 
 }
 
-function clean {
-
-    cd ..
-    sudo rm -rf dotfiles
-
-}
-
 function restart {
     
-    sudo shutdown -r +5 "Elementary OS will 😴 restart in 5 minutes. Please 🛡️ save your work."
+    sudo shutdown -r +7 "Elementary OS will 😴 restart in 7 minutes. Please 🛡️ save your work."
     
-    echo "🎉🎉🎉 Congratulations!!!! 🎉🎉🎉"
+    echo "🍺🍺🍺 Congratulations!!!! 🍺🍺🍺"
     
 }
 
@@ -174,6 +169,4 @@ install_zsh
 config_dotfiles
 install_environments
 install_applications
-clean
 restart
-
