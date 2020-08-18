@@ -1,7 +1,6 @@
 language: bash
 
 before_install:
-    - sudo apt-get upgrade
     - sudo apt-get update
 
 script:
