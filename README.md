@@ -2,7 +2,7 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 [![Hits-of-Code](https://hitsofcode.com/github/103cuong/dotfiles)](https://hitsofcode.com/view/github/103cuong/dotfiles)
-[![Build Status](https://travis-ci.org/103cuong/dotfiles.svg?branch=master)](https://travis-ci.org/103cuong/dotfiles)
+![dotfiles-ci status](https://github.com/103cuong/dotfiles/workflows/dotfiles-ci/badge.svg)
 [![](https://img.shields.io/github/license/103cuong/dotfiles.svg)](https://github.com/103cuong/dotfiles/blob/master/LICENSE.md)
 
 > 💻 dotfiles and 🚀 more (ElementaryOS).
