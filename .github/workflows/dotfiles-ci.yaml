@@ -9,7 +9,7 @@ on:
     - master
 
 jobs:
-  run-install-file:
+  build:
     runs-on: ubuntu-latest
     
     steps:
@@ -20,5 +20,5 @@ jobs:
       with:
         go-version: '1.14.0'
         
-    - name: Run install.go file
-      run: go run install.go
+    - name: build install.go
+      run: build install.go
