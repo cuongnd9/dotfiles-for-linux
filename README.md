@@ -10,7 +10,7 @@
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/master/install.sh)"
+curl https://raw.githubusercontent.com/103cuong/dotfiles/master/install --output install && ./install
 ```
 
 ### ⚙️ ibus-unikey
