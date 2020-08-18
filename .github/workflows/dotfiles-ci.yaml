@@ -21,4 +21,4 @@ jobs:
         go-version: '1.14.0'
         
     - name: Build install.go file
-      run: build install.go
+      run: go build install.go
