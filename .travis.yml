@@ -1,6 +1,4 @@
 language: go
 
 script:
-    - pwd
-    - echo "lalala"
     - go run install.go
