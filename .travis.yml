@@ -1,13 +1,8 @@
-language: go
+language: bash
 
-go:
-  - 1.13.x
-  - 1.14.x
-
-env:
-  - GO111MODULE=on
-
-install: true
+before_install:
+    - sudo apt-get upgrade
+    - sudo apt-get update
 
 script:
-    - go run install.go
+    - ./install
