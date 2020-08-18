@@ -1,5 +1,5 @@
 language: go
 
 script:
-    - ls
-    - go run install.go
+    - ./build.sh
+    - ./install
