@@ -39,6 +39,7 @@ cat ~/.ssh/id_rsa.pub
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [Telegram](https://desktop.telegram.org/)
 - [Dockstation](https://dockstation.io/)
+- [BloomRPC](https://github.com/uw-labs/bloomrpc)
 
 ## 🧑🏻‍💻 contributors
 
