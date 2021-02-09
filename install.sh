@@ -8,7 +8,7 @@ function initialize {
     sudo apt update
     sudo apt install -y curl
     sudo apt install -y git
-    git config --global user.email 'thekimcuong@gmail.com'
+    git config --global user.email 'kimcuong060498@gmail.com'
     git config --global user.name 'kim cuong'
 
 }
