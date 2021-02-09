@@ -27,7 +27,7 @@ Add **ibus-daemon -drx** to **startup**
 ### 🔑 generating a new SSH key
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "thekimcuong@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "kimcuong060498@gmail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
