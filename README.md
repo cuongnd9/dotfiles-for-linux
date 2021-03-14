@@ -9,7 +9,7 @@
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/thekimcuong/dotfiles-for-linux/main/install.sh)"
+yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/install.sh)"
 ```
 
 ### ⚙️ ibus-unikey
