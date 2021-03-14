@@ -1,15 +1,15 @@
 # dotfiles
 
 [![Hits-of-Code](https://hitsofcode.com/github/thekimcuong/dotfiles)](https://hitsofcode.com/view/github/thekimcuong/dotfiles)
-[![Build Status](https://travis-ci.org/thekimcuong/dotfiles.svg?branch=master)](https://travis-ci.org/thekimcuong/dotfiles)
-[![](https://img.shields.io/github/license/thekimcuong/dotfiles.svg)](https://github.com/thekimcuong/dotfiles/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.org/thekimcuong/dotfiles.svg?branch=main)](https://travis-ci.org/thekimcuong/dotfiles)
+[![](https://img.shields.io/github/license/thekimcuong/dotfiles.svg)](https://github.com/thekimcuong/dotfiles/blob/main/LICENSE.md)
 
 > 💻 dotfiles and 🚀 more (ElementaryOS).
 
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/thekimcuong/dotfiles/master/install.sh)"
+yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/thekimcuong/dotfiles/main/install.sh)"
 ```
 
 ### ⚙️ ibus-unikey
@@ -33,8 +33,8 @@ cat ~/.ssh/id_rsa.pub
 
 ### 💅 other
 
-- [night-owl-pantheon](https://github.com/103cuong/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
-- [dracula-pantheon](https://github.com/103cuong/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
+- [night-owl-pantheon](https://github.com/kimcuong060498/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
+- [dracula-pantheon](https://github.com/kimcuong060498/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [golangci-lint](https://golangci-lint.run/usage/integrations/)
 - [protoc](http://google.github.io/proto-lens/installing-protoc.html)
