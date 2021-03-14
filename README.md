@@ -33,8 +33,8 @@ cat ~/.ssh/id_rsa.pub
 
 ### 💅 other
 
-- [night-owl-pantheon](https://github.com/103cuong/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
-- [dracula-pantheon](https://github.com/103cuong/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
+- [night-owl-pantheon](https://github.com/kimcuong060498/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
+- [dracula-pantheon](https://github.com/kimcuong060498/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [golangci-lint](https://golangci-lint.run/usage/integrations/)
 - [protoc](http://google.github.io/proto-lens/installing-protoc.html)

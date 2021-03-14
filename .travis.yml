@@ -1,4 +1,4 @@
 language: bash
 
 script:
-    - yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/103cuong/dotfiles/main/install.sh)"
+    - yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/kimcuong060498/dotfiles/main/install.sh)"
