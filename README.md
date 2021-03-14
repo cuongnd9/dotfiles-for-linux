@@ -1,15 +1,15 @@
 # dotfiles
 
-[![Hits-of-Code](https://hitsofcode.com/github/thekimcuong/dotfiles)](https://hitsofcode.com/view/github/thekimcuong/dotfiles)
-[![Build Status](https://travis-ci.org/thekimcuong/dotfiles.svg?branch=main)](https://travis-ci.org/thekimcuong/dotfiles)
-[![](https://img.shields.io/github/license/thekimcuong/dotfiles.svg)](https://github.com/thekimcuong/dotfiles/blob/main/LICENSE.md)
+[![Hits-of-Code](https://hitsofcode.com/github/thekimcuong/dotfiles-for-linux)](https://hitsofcode.com/view/github/thekimcuong/dotfiles-for-linux)
+[![Build Status](https://travis-ci.org/thekimcuong/dotfiles-for-linux.svg?branch=main)](https://travis-ci.org/thekimcuong/dotfiles-for-linux)
+[![](https://img.shields.io/github/license/thekimcuong/dotfiles-for-linux.svg)](https://github.com/thekimcuong/dotfiles-for-linux/blob/main/LICENSE.md)
 
 > 💻 dotfiles and 🚀 more (ElementaryOS).
 
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/thekimcuong/dotfiles/main/install.sh)"
+yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/thekimcuong/dotfiles-for-linux/main/install.sh)"
 ```
 
 ### ⚙️ ibus-unikey
