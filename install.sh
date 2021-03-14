@@ -41,8 +41,8 @@ function config_dotfiles {
     
     rm ~/.zshrc
     rm ~/.bash_profile
-    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles/main/.zshrc --output .zshrc
-    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles/main/.bash_profile --output .bash_profile
+    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/.zshrc --output .zshrc
+    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/.bash_profile --output .bash_profile
     cp .zshrc ~/.zshrc
     cp .bash_profile ~/.bash_profile
 
