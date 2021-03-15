@@ -1,9 +1,5 @@
 # dotfiles
 
-[![Hits-of-Code](https://hitsofcode.com/github/thekimcuong/dotfiles-for-linux)](https://hitsofcode.com/view/github/thekimcuong/dotfiles-for-linux)
-[![Build Status](https://travis-ci.org/thekimcuong/dotfiles-for-linux.svg?branch=main)](https://travis-ci.org/thekimcuong/dotfiles-for-linux)
-[![](https://img.shields.io/github/license/thekimcuong/dotfiles-for-linux.svg)](https://github.com/thekimcuong/dotfiles-for-linux/blob/main/LICENSE.md)
-
 > 💻 dotfiles and 🚀 more (ElementaryOS).
 
 ### 🧰 general installation
