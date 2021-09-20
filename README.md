@@ -5,7 +5,7 @@
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/install.sh)"
+yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/harrytran103/dotfiles-for-linux/main/install.sh)"
 ```
 
 ### ⚙️ ibus-unikey
@@ -23,14 +23,14 @@ Add **ibus-daemon -drx** to **startup**
 ### 🔑 generating a new SSH key
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "kimcuong060498@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "harrytran103@gmail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
 ### 💅 other
 
-- [night-owl-pantheon](https://github.com/kimcuong060498/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
-- [dracula-pantheon](https://github.com/kimcuong060498/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
+- [night-owl-pantheon](https://github.com/harrytran103/night-owl-pantheon) - 🌌🦉Night Owl theme for Pantheon terminal.
+- [dracula-pantheon](https://github.com/harrytran103/dracula-pantheon) - 🧛🏻‍♂️ Dark theme for Pantheon terminal.
 - [mediumship](https://github.com/swapagarwal/mediumship) - 📚 Read all Medium stories for free!
 - [golangci-lint](https://golangci-lint.run/usage/integrations/)
 - [protoc](http://google.github.io/proto-lens/installing-protoc.html)
