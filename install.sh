@@ -8,8 +8,8 @@ function initialize {
     sudo apt update
     sudo apt install -y curl
     sudo apt install -y git
-    git config --global user.email 'kimcuong060498@gmail.com'
-    git config --global user.name 'kim cuong'
+    git config --global user.email 'harrytran103@gmail.com'
+    git config --global user.name 'Harry Tran'
 
 }
 
@@ -41,8 +41,8 @@ function config_dotfiles {
     
     rm ~/.zshrc
     rm ~/.bash_profile
-    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/.zshrc --output .zshrc
-    curl https://raw.githubusercontent.com/kimcuong060498/dotfiles-for-linux/main/.bash_profile --output .bash_profile
+    curl https://raw.githubusercontent.com/harrytran103/dotfiles-for-linux/main/.zshrc --output .zshrc
+    curl https://raw.githubusercontent.com/harrytran103/dotfiles-for-linux/main/.bash_profile --output .bash_profile
     cp .zshrc ~/.zshrc
     cp .bash_profile ~/.bash_profile
 
