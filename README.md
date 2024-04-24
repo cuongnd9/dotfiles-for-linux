@@ -5,7 +5,7 @@
 ### 🧰 general installation
 
 ```sh
-yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/harrytran103/dotfiles-for-linux/main/install.sh)"
+yes | /bin/bash -c "$(curl -sSL https://raw.githubusercontent.com/cuongndc/dotfiles-for-linux/main/install.sh)"
 ```
 
 ### ⚙️ ibus-unikey
@@ -23,7 +23,7 @@ Add **ibus-daemon -drx** to **startup**
 ### 🔑 generating a new SSH key
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "harrytran103@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "cuongndc9@gmail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
